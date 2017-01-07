@@ -12,16 +12,17 @@ block content
             p
               strong  Address: 
               |   Quezon City, Metro Manila, Philippines
-            .row
-              .col-md-6
-                .form-group
-                  input.form-control(type='text', required='required', placeholder='Name')
-              .col-md-6
-                .form-group
-                  input.form-control(type='text', required='required', placeholder='Email address')
-            .row
-              .col-md-12
-                .form-group
-                  textarea#message.form-control(name='message', required='required', rows='3', placeholder='Message')
-                .form-group
-                  button.btn.btn-danger(type='submit') Submit Request
+            form(action='contact/send', method='post')  
+              .row
+                .col-md-6
+                  .form-group
+                    input.form-control(type='text', name='name', required='required', placeholder='Name')
+                .col-md-6
+                  .form-group
+                    input.form-control(type='email', name='email' required='required', placeholder='Email address')
+              .row
+                .col-md-12
+                  .form-group
+                    textarea#message.form-control(name='message', required='required', rows='3', placeholder='Message')
+                  .form-group
+                    button.btn.btn-danger(type='submit') Submit Request
