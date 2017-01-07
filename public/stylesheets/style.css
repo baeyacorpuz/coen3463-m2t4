@@ -1,0 +1,9 @@
+body {
+  font-family:'Open Sans', sans-serif;
+    font-size:14px;
+    background-image:url('../images/pixel_weave.png')!important;
+}
+
+a {
+  color: #00B7FF;
+}

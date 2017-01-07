@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  section#portfolio
+    #services
+      .row.text-center
+        .col-md-12
+          h1= title
+          .container
+            p(align='justify')= subtitle
+      .container
+        .col-md-4.col-sm-4.col-xs-12
+          .holder2
+            .row.text-center
+              a(href='/personal_laundry', data-toggle='modal')
+                img.image(src='#{img1}', alt='')
+                .overlay
+                  .text
+                    h1= name1
+                    p= description1 
+        .col-md-4.col-sm-4.col-xs-12
+          .holder2
+            .row.text-center
+              a(href='/dry_cleaning', data-toggle='modal')
+                img.image(src='#{img2}', alt='')
+                .overlay
+                  .text
+                    h1= name2
+                    p= description2 
+        .col-md-4.col-sm-4.col-xs-12
+          .holder2
+            .row.text-center
+              a(href='/commercial_laundry', data-toggle='modal')
+                img.image(src='#{img3}', alt='')
+                .overlay
+                  .text
+                    h1= name3
+                    p= description3
+      .pad-top

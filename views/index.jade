@@ -1,0 +1,75 @@
+extends layout
+
+block content
+  #home-sec
+    .container
+      .row.text-center
+        .col-md-12
+          #carousel-example.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .item.active
+                img(src='images/laundry1.jpg', alt='')
+                .carousel-caption
+                  h4.back-light COMMERCIAL LAUNDRY
+              .item
+                img(src='images/laundry2.jpg', alt='')
+                .carousel-caption
+                  h4.back-light DRY CLEANING SERVICE
+              .item
+                img(src='images/laundry6.png', alt='')
+                .carousel-caption
+                  h4.back-light PERSONAL LAUNDRY
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example', data-slide-to='0')
+              li(data-target='#carousel-example', data-slide-to='1')
+              li(data-target='#carousel-example', data-slide-to='2')
+
+  #services
+    .container
+      .row.text-center
+        .col-md-4.col-sm-4.icon-big
+          h1
+            a(href='#') Personal Laundry
+          p.services
+            | We serve you the best experience in laundry services with varieties of
+            | offers you can choose from depending on your needs and wants. We make
+            | sure we give you the quality you deserve on a right price.
+        .col-md-4.col-sm-4.icon-big
+          h1
+            a(href='#') Dry Cleaning Service
+          p.services
+            | Get the complete dry cleaning experience with Bubbles. We not only
+            | care for your clothes during the time it is with us, we care for
+            | it even after. Whatever your packaging needs are, we have something
+            | to offer.
+        .col-md-4.col-sm-4.icon-big
+          h1
+            a(href='#') Commercial Laundry
+          p.services
+            | Are you a hotel, resort or business owner with laundry needs?
+            | We have industrial laundry plants to serve you. Get better quality
+            | and longer linen life with us. Contact us to discuss your
+            | industrial and commercial laundry needs.
+
+
+    section#about
+      .container
+        .row.text-center
+          .text-center
+            .col-md-4.col-sm-4
+              img.img-circle(src='images/team1.png', alt='')
+              h3
+                strong Bea Corpuz
+              p
+                | Web Development Specialist 1
+            .col-md-4.col-sm-4
+              img.img-circle(src='images/team2.jpg', alt='')
+              h3
+                strong Danica Villanueva
+              p
+                | Web Development Specialist 2
+            .col-md-4.col-sm-4.alert-success
+              h4 Who We Are ?
+              p
+                | Team Number 4 of COEN3463 Software Engineering
+                | Fifth year - Section One of Bachelor of Science in Computer Engineering
